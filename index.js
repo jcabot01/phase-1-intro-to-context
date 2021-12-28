@@ -61,16 +61,6 @@ function allWagesFor(employeeObj) {
 }
 
 function calculatePayroll(employeesArray) { //take in ARRAY of all employees
-  // let //create an empty array to contain allWages for all employees
-  return employeesArray.reduce((m, e) => m + allWagesFor(e), 0)
+  return employeesArray.reduce((m, e) => m + allWagesFor(e), 0) //perform a reduce on the employeesArray; previous value (0) + allWages for every employee
 }
-// ### `calculatePayroll`
 
-// * **Argument(s)**
-//   * `Array` of employee records
-// * **Returns**
-//   * Sum of pay owed to all employees for all dates, as a number
-// * **Behavior**
-//   * Using `wagesEarnedOnDate`, accumulate the value of all dates worked by the
-//     employee in the record used as context. Amount should be returned as a
-//     number.
